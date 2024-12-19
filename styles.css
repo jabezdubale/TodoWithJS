@@ -1,0 +1,123 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(45deg, gray,beige);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+}
+.todoContainer {
+    background-color:darkslategray;
+    border-radius: 20px;
+    width: 80vw;
+    min-height: 30vh;
+    margin-top: 10vh;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+h2{
+    color: beige;
+    margin-top: 7vh;
+    font-size: 25pt;
+    align-content:center;
+    text-decoration: underline;
+}
+.inputField{
+    position: relative;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.5vh;
+}
+.inputField input {
+    font-size: 11pt;
+    height: 7vh;
+    border: 0;
+    border-radius: 50px;
+    width: 100%;
+    padding-left: 30px;
+}
+
+.inputField input:focus{
+    outline: none;
+}
+
+.inputField button {
+    font-size: 11pt;
+    position: absolute;
+    right: 0;
+    height: 7vh;
+    width: 20%;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: lightgray;
+}
+.inputField button:focus{
+    outline: none;
+}
+.inputField button:hover{
+    background-color: rgba(211, 211, 211, 0.518);
+}
+
+#main-container{
+    width: 100%;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskItem{
+    width: 75%;
+    margin: 0 5vw 1vh 5vw;
+    padding: 1vh 1.5vw 1vh 1vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: beige;
+    background-color: #587272;
+    border-radius: 10px;
+}
+
+/* If a small movement (animation like) is needed when hovering over the lists, unlock the code below */
+/* .taskItem:hover{
+    padding: 2vh 2.5vw 2vh 2vw;
+    margin: 1 6vw 2vh 6vw;
+} */
+
+.taskItem img {
+    height: 3.5vh;
+    cursor: pointer;
+}
+.taskItem .close-icon {
+    height: 2.5vh;
+    padding:1%;
+    cursor: pointer;
+}
+.taskItem .close-icon:hover {
+    background-color: rgba(0, 0, 0, 0.127);
+    border-radius: 5px;
+}
+
+.taskItem p {
+    color: beige;
+    font-size: 11pt;
+    padding: 0 2vw 0 1vw;
+    margin: 0;
+    flex: 1;
+}
+
+.taskItem.doneTodos p{
+    color: lightgrey;
+    text-decoration:line-through;
+    text-decoration-color: lightgrey;
+}
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoalGuide</title>
+    <link rel="icon" href="icons/to-do-list.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="todoContainer">
+      <h2>ToDo List</h2>
+      <form class="inputField" aria-label="Task input form">
+        <input
+          id="input-text"
+          type="text"
+          placeholder="Enter your task"
+          autocomplete="off"
+        />
+        <button type="submit" aria-label="Add task">ADD</button>
+      </form>
+      <div id="main-container"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
